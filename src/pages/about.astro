@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About Adelyn Cook - Creative Marketing Strategist">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="pt-24 pb-16 bg-gradient-to-br from-cream via-cream/95 to-teal/5">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h1 class="font-heading font-bold text-5xl text-charcoal mb-6">
+          About Adelyn
+        </h1>
+        <p class="text-xl text-charcoal/80 leading-relaxed">
+          Creative Marketing Strategist with a passion for bringing ideas to life
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <!-- Profile Image -->
+        <div class="relative">
+          <div class="bg-gradient-to-br from-coral/20 to-teal/20 rounded-3xl p-8">
+            <div class="bg-white rounded-2xl p-6 shadow-xl">
+              <div class="w-32 h-32 bg-gradient-to-br from-coral to-teal rounded-full mx-auto mb-6 flex items-center justify-center">
+                <span class="text-white font-bold text-4xl">AC</span>
+              </div>
+              <div class="text-center">
+                <h3 class="font-heading font-bold text-2xl text-charcoal mb-2">Adelyn Cook</h3>
+                <p class="text-coral font-semibold">Creative Marketing Strategist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio Content -->
+        <div class="space-y-6">
+          <div>
+            <h2 class="font-heading font-bold text-3xl text-charcoal mb-4">
+              My Story
+            </h2>
+            <p class="text-lg text-charcoal/80 leading-relaxed mb-4">
+              I'm an ambitious and creative individual with a deep passion for marketing and brand development. 
+              I thrive in dynamic environments that allow me to merge strategy with imagination, dedicating 
+              myself fully to every project I undertake.
+            </p>
+            <p class="text-lg text-charcoal/80 leading-relaxed">
+              With specialties in digital marketing, in-person marketing, and project marketing, I bring a 
+              versatile and hands-on approach to every campaign. My commitment to research ensures that both 
+              the smallest details and the broader vision are executed with excellence.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-br from-coral/5 to-teal/5 rounded-2xl p-6">
+            <blockquote class="text-lg text-charcoal/80 italic leading-relaxed">
+              "I believe the best marketing is felt, not just seen. With exceptional communication skills 
+              and a natural ability to connect with people, I excel at bringing ideas to life and fostering collaboration."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

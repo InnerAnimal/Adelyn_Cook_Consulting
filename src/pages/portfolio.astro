@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Portfolio - Adelyn Cook Marketing Projects">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="pt-24 pb-16 bg-gradient-to-br from-cream via-cream/95 to-teal/5">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="font-heading font-bold text-5xl text-charcoal mb-6">
+        My Portfolio
+      </h1>
+      <p class="text-xl text-charcoal/80 leading-relaxed">
+        A showcase of marketing campaigns and projects that bring brands to life
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-gradient-to-br from-coral/5 to-coral/10 rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+          <div class="w-full h-48 bg-gradient-to-br from-coral to-coral-light rounded-xl mb-6 flex items-center justify-center">
+            <span class="text-white font-bold text-2xl">Digital Campaign</span>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-charcoal mb-2">Social Media Strategy</h3>
+          <p class="text-charcoal/70 mb-4">
+            Comprehensive social media strategy that increased engagement by 300% and grew followers by 150%.
+          </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-gradient-to-br from-teal/5 to-teal/10 rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+          <div class="w-full h-48 bg-gradient-to-br from-teal to-teal-light rounded-xl mb-6 flex items-center justify-center">
+            <span class="text-white font-bold text-2xl">Event Activation</span>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-charcoal mb-2">Brand Launch Event</h3>
+          <p class="text-charcoal/70 mb-4">
+            Memorable brand launch event that generated 500+ leads and created lasting brand awareness.
+          </p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-gradient-to-br from-coral/5 to-teal/5 rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+          <div class="w-full h-48 bg-gradient-to-br from-coral to-teal rounded-xl mb-6 flex items-center justify-center">
+            <span class="text-white font-bold text-2xl">Full Campaign</span>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-charcoal mb-2">Integrated Marketing Campaign</h3>
+          <p class="text-charcoal/70 mb-4">
+            End-to-end marketing campaign that increased sales by 250% and improved brand recognition.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
