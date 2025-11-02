@@ -129,28 +129,35 @@ npm run preview
 
 ## 🚀 Deployment
 
-### GitHub Pages
+This site automatically deploys to GitHub Pages via GitHub Actions whenever changes are pushed to the `main` branch.
 
-1. **Enable GitHub Pages**
+### GitHub Pages Setup
+
+1. **Enable GitHub Pages** (one-time setup)
    - Go to repository Settings
    - Scroll to Pages section
-   - Select "Deploy from a branch"
-   - Choose `gh-pages` branch
+   - Under "Source", select "GitHub Actions"
 
-2. **Deploy automatically**
-   ```bash
-   npm run build
-   npm run deploy
-   ```
+2. **Automatic Deployment**
+   - Push changes to the `main` branch
+   - GitHub Actions will automatically build and deploy
+   - Site will be live at: https://inneranimal.github.io/Adelyn_Cook_Consulting
 
-### Manual Deployment
+3. **Manual Deployment Trigger**
+   - Go to Actions tab in GitHub
+   - Select "Deploy Astro site to Pages" workflow
+   - Click "Run workflow"
 
-1. **Build the site**
-   ```bash
-   npm run build
-   ```
+### Local Build
 
-2. **Upload dist/ folder** to your hosting provider
+To build and preview the site locally:
+
+```bash
+npm run build
+npm run preview
+```
+
+The built site will be in the `dist/` directory.
 
 ## 📊 Performance
 
